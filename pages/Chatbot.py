@@ -25,7 +25,7 @@ def get_base64_image(image_path):
 
 # LOAD ASSETS
 
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve().parent
 EMB_PATH = BASE_DIR / "Clip_Embeddings" / "panel_clip_embeddings.pt"
 LOGO_PATH = BASE_DIR / "Utils" / "logo.png"
 BG_PATH = BASE_DIR / "Utils" / "comic_bg.jpg"
