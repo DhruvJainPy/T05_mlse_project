@@ -221,7 +221,7 @@ if prompt := st.chat_input("Ask about the comic..."):
 
                 else:
                     # Base path for your panels
-                    base_path = "/Users/dhruv/Desktop/Dhruv/DAIICT/Semester III/ML Systems Engineering/MLSE Final Project/panels/"
+                    base_path = Path(__file__).resolve().parent.parent / "panels"
                     
                     # Clean filename logic
                     filename = first_result['image_path'].replace("\\", "/").split("/")[-1]
