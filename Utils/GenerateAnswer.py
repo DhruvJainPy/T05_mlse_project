@@ -46,7 +46,8 @@ print("Loaded CLIP model:", model_name, "pretrained:", pretrained)
 # 3. Load saved embeddings
 # ============================
 
-BASE_DIR = Path(__file__).resolve().parent
+BASE_DIR = Path(__file__).resolve().parent.parent
+print("Base directory:", BASE_DIR)
 EMB_PATH = BASE_DIR / "Clip_Embeddings" / "panel_clip_embeddings.pt"
 
 if not EMB_PATH.exists():
